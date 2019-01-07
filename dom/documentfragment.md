@@ -4,9 +4,8 @@ description: DOM的DocumentFragment对象相关笔记
 
 # DocumentFragment
 
-{% hint style="info" %}
-DocumentFragment接口可以用来做dom级别的性能优化
-{% endhint %}
+
+> DocumentFragment接口可以用来做dom级别的性能优化
 
 ## 介绍
 
@@ -33,9 +32,7 @@ for (let i = 0; i < 100; i++) {
 document.body.appendChild(frag)
 ```
 
-{% hint style="warning" %}
-当DocumentFragment 对象插入完会自动销毁DocumentFragment 对象的内容
-{% endhint %}
+> 当DocumentFragment 对象插入完会自动销毁DocumentFragment 对象的内容
 
 #### 移除DOM到DocumentFragment对象中
 
