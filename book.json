@@ -1,0 +1,41 @@
+{
+  "title": "Eick的杂记",
+  "language": "zh-hans",
+  "plugins": [
+    "github",
+    "github-buttons",
+    "splitter",
+    "mermaid",
+    "disqus",
+    "-search",
+    "anchor-navigation-ex",
+    "search-pro",
+    "advanced-emoji",
+    "hints",
+    "highlight-code",
+    "toggle-chapters"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/EickeOe"
+    },
+    "github-buttons": {
+      "buttons": [
+        {
+          "user": "EickeOe",
+          "repo": "notes",
+          "type": "star",
+          "size": "small",
+          "count": true
+        }
+      ]
+    },
+    "disqus": {
+      "shortName": "gitbookuse"
+    },
+    "search-pro": {
+      "cutWordLib": "nodejieba",
+      "defineWord": ["搜索"]
+    }
+  }
+}
