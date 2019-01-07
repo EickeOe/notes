@@ -4,9 +4,8 @@ description: React简单介绍
 
 # 简单介绍
 
-{% hint style="info" %}
-本文档示例代码使用语言为typescript
-{% endhint %}
+> 本文档示例代码使用语言为typescript
+
 
 ### 简介
 
