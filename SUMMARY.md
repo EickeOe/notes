@@ -8,7 +8,7 @@
 
 ## JavaScript
 
-* [类型和值](javascript/untitled.md)
+* [类型和值](javascript/type-and-value.md)
 
 ## React
 
