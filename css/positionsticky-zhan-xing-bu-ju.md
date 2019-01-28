@@ -20,11 +20,11 @@
 
 #### 兼容性
 
-* IE11
-* edge
-* chrome
-* firxfox
-* safari
+* [ ] IE11
+* [x] edge
+* [x] chrome
+* [x] firxfox
+* [x] safari
 
 > Q: 如何兼容IE11？
 >
