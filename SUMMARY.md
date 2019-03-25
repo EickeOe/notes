@@ -9,6 +9,8 @@
 ## JavaScript
 
 * [类型和值](javascript/type-and-value.md)
+* [Untitled](javascript/untitled.md)
+* [Untitled](javascript/untitled-1.md)
 
 ## React
 
@@ -21,4 +23,8 @@
 ## CSS
 
 * [position：sticky粘性布局](css/positionsticky-zhan-xing-bu-ju.md)
+
+## PYTHON
+
+* [基础](python/ji-chu.md)
 
