@@ -9,8 +9,6 @@
 ## JavaScript
 
 * [类型和值](javascript/type-and-value.md)
-* [Untitled](javascript/untitled.md)
-* [Untitled](javascript/untitled-1.md)
 
 ## React
 
@@ -27,4 +25,10 @@
 ## PYTHON
 
 * [基础](python/ji-chu.md)
+
+## OpenGL
+
+* [什么是 OpenGL？&创建三角形](opengl/shen-me-shi-opengl-chuang-jian-san-jiao-xing.md)
+* [着色器](opengl/zhe-se-qi.md)
+* [纹理](opengl/wen-li.md)
 
