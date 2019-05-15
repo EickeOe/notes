@@ -13,6 +13,9 @@
 ## React
 
 * [简单介绍](react/jian-dan-jie-shao.md)
+* [搭建 React 项目](react/da-jian-react-xiang-mu.md)
+* [搭建 React Native 项目](react/da-jian-react-native-xiang-mu.md)
+* [Redux](react/redux.md)
 
 ## Vue
 
