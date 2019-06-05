@@ -9,6 +9,7 @@
 ## JavaScript
 
 * [类型和值](javascript/type-and-value.md)
+* [JSON.stringify详解](javascript/qiang-zhi-lei-xing-zhuan-huan.md)
 * [Babel编译及抽象语法树（AST）](javascript/babel-bian-yi-ji-chou-xiang-yu-fa-shu-ast.md)
 
 ## React
