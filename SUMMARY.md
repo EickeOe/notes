@@ -5,6 +5,7 @@
 ## DOM
 
 * [DocumentFragment](dom/documentfragment.md)
+* [Babel编译及抽象语法树（AST）](dom/babel-bian-yi-ji-chou-xiang-yu-fa-shu-ast.md)
 
 ## JavaScript
 
