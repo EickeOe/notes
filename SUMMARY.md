@@ -5,11 +5,11 @@
 ## DOM
 
 * [DocumentFragment](dom/documentfragment.md)
-* [Babel编译及抽象语法树（AST）](dom/babel-bian-yi-ji-chou-xiang-yu-fa-shu-ast.md)
 
 ## JavaScript
 
 * [类型和值](javascript/type-and-value.md)
+* [Babel编译及抽象语法树（AST）](javascript/babel-bian-yi-ji-chou-xiang-yu-fa-shu-ast.md)
 
 ## React
 
