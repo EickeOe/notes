@@ -10,7 +10,9 @@
 
 * [类型和值](javascript/type-and-value.md)
 * [JSON.stringify详解](javascript/qiang-zhi-lei-xing-zhuan-huan.md)
+* [文法（grammar）](javascript/wen-fa-grammar.md)
 * [Babel编译及抽象语法树（AST）](javascript/babel-bian-yi-ji-chou-xiang-yu-fa-shu-ast.md)
+* [面试题杂记](javascript/mian-shi-ti-za-ji.md)
 
 ## React
 
