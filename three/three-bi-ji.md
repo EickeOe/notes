@@ -1,4 +1,4 @@
-# THREE笔记
+# 光（light）
 
 ## 半球光（hemisphere light）
 

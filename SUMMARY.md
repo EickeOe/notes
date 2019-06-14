@@ -46,5 +46,6 @@
 
 ## THREE
 
-* [THREE笔记](three/three-bi-ji.md)
+* [光（light）](three/three-bi-ji.md)
+* [增量时间（deltaTime）](three/zeng-liang-shi-jian-deltatime.md)
 
