@@ -25,6 +25,7 @@
 ## Vue
 
 * [vue cli3 Generator插件开发教程](vue/vue-cli3-generator-cha-jian-ru-he-bian-xie.md)
+* [VUE多入口多项目项目架构（multi-page）（例如：OA系统，CRM系统）](vue/vue-duo-ru-kou-duo-xiang-mu-xiang-mu-jia-gou-multipage-li-ru-oa-xi-tong-crm-xi-tong.md)
 
 ## CSS
 
