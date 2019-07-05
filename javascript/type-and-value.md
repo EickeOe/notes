@@ -1,10 +1,4 @@
----
-description: JavaScript小记-类型
----
-
 # 类型和值
-
-
 
 ### 类型
 

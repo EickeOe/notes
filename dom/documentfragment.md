@@ -1,8 +1,6 @@
----
-description: DOM的DocumentFragment对象相关笔记
----
-
 # DocumentFragment
+
+
 
 {% hint style="info" %}
 DocumentFragment接口可以用来做dom级别的性能优化
