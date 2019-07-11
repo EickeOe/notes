@@ -13,6 +13,7 @@
 * [文法（grammar）](javascript/wen-fa-grammar.md)
 * [Babel编译及抽象语法树（AST）](javascript/babel-bian-yi-ji-chou-xiang-yu-fa-shu-ast.md)
 * [面试题杂记](javascript/mian-shi-ti-za-ji.md)
+* [marked.js使用杂记](javascript/marked.js-shi-yong-za-ji.md)
 
 ## React
 
