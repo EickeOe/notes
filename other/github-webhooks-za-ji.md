@@ -43,7 +43,7 @@ polka是一个很小的http服务器，这里当成express来使用就可以了
 
 然后再点左侧栏的`Webhooks`,右边有`Add werbhook`按钮,点击增加`Webhook`:
 
-![webhooks](http://pudiuxgrk.bkt.clouddn.com/webhooks.png)
+![](https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g4zdb3jqicj30s40dat9s.jpg)
 
 `Payload URL`中输入我们的接口地址
 
