@@ -51,7 +51,7 @@ polka是一个很小的http服务器，这里当成express来使用就可以了
 
 `Secret`是用来做加密验证的,可以随便填一些字符串,我们这里推荐填随机生成的字符串.也就是当GitHub访问我们的接口时会带上签名,我们的服务器需要进行验证,验证通过才能执行业务逻辑
 
-![add webhook](http://pudiuxgrk.bkt.clouddn.com/webhook1.png)
+![add webhook](https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g4zdcv9thyj30rz0ly0uf.jpg)
 
 输入完成后,点击下面的绿色`Add webpack`按钮,GitHub会ping我们的接口,测试我们的接口能不能正常接收请求.
 
