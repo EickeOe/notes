@@ -37,23 +37,13 @@ polka是一个很小的http服务器，这里当成express来使用就可以了
 
 很简单的一个例子，接收`post`请求，返回'webhooks success'，具体业务就不写啦。
 
-接下来，需要打开我们的GitHub仓库界面：
+接下来，需要打开我们的GitHub仓库界面，点这里的`Settings`:
 
-
-
-![github](http://pudiuxgrk.bkt.clouddn.com/notes.png)
-
-点这里的`Settings`:
-
-
-
-![webhooks](http://pudiuxgrk.bkt.clouddn.com/webhooks.png)
+![](https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g4zd7l78csj30rz0o4ju1.jpg)
 
 然后再点左侧栏的`Webhooks`,右边有`Add werbhook`按钮,点击增加`Webhook`:
 
-
-
-![add webhook](http://pudiuxgrk.bkt.clouddn.com/webhook1.png)
+![webhooks](http://pudiuxgrk.bkt.clouddn.com/webhooks.png)
 
 `Payload URL`中输入我们的接口地址
 
@@ -61,11 +51,13 @@ polka是一个很小的http服务器，这里当成express来使用就可以了
 
 `Secret`是用来做加密验证的,可以随便填一些字符串,我们这里推荐填随机生成的字符串.也就是当GitHub访问我们的接口时会带上签名,我们的服务器需要进行验证,验证通过才能执行业务逻辑
 
+![add webhook](http://pudiuxgrk.bkt.clouddn.com/webhook1.png)
+
 输入完成后,点击下面的绿色`Add webpack`按钮,GitHub会ping我们的接口,测试我们的接口能不能正常接收请求.
 
 这个页面下面就出现一条ping的请求，可以看到，我们的例子接口是可以正常请求的。
 
-![webhook request](http://pudiuxgrk.bkt.clouddn.com/webhook-success.png)
+![](https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g4zd8xk4p1j30rs0rmwgl.jpg)
 
 ### Secret签名验证怎么做？
 
