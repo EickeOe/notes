@@ -108,7 +108,5 @@ polka()
 
 这样，加密签名验证就完成啦。
 
-后面会分享关于GitHub的release和tags的hook使用，当前就结束啦
-
 
 
