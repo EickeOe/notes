@@ -55,3 +55,7 @@
 
 * [GitHub Webhooks杂记](other/github-webhooks-za-ji.md)
 
+## GraphQL
+
+* [graphql介绍&第一个GraphQL Query](graphql/graphql-jie-shao-di-yi-ge-graphql-query.md)
+
