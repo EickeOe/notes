@@ -14,6 +14,7 @@
 * [Babel编译及抽象语法树（AST）](javascript/babel-bian-yi-ji-chou-xiang-yu-fa-shu-ast.md)
 * [面试题杂记](javascript/mian-shi-ti-za-ji.md)
 * [marked.js使用杂记](javascript/marked.js-shi-yong-za-ji.md)
+* [Browser list详解](javascript/browser-list-xiang-jie.md)
 
 ## React
 
