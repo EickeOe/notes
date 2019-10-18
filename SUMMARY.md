@@ -15,6 +15,7 @@
 * [面试题杂记](javascript/mian-shi-ti-za-ji.md)
 * [marked.js使用杂记](javascript/marked.js-shi-yong-za-ji.md)
 * [Browser list详解](javascript/browser-list-xiang-jie.md)
+* [commitlint 校验工具安装及使用](javascript/commitlint-xiao-yan-gong-ju-an-zhuang-ji-shi-yong.md)
 
 ## React
 
