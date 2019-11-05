@@ -1,0 +1,33 @@
+version: 2.1 # use CircleCI 2.1
+jobs: # a collection of steps
+  deploy:
+    machine:
+      # timezone: Asia/Shanghai # 设置上海时区
+      enabled: true
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "$SSH_KEY"
+      - run: pwd && ls -al
+      - run:
+          name: chmod1
+          command: |
+            find . -type d -print0 | xargs -0  chmod 755
+      - run:
+          name: deploy
+          command: |
+            $RSYNC_SCRIPT
+      - run:
+          name: curl
+          command: |
+            ssh $ACCOUNT_IP -p $SERVER_PORT "curl $HOOK_URL --header 'fingerprint: $SSH_KEY'"
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
