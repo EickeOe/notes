@@ -15,7 +15,6 @@
 * [面试题杂记](javascript/mian-shi-ti-za-ji.md)
 * [marked.js使用杂记](javascript/marked.js-shi-yong-za-ji.md)
 * [Browser list详解](javascript/browser-list-xiang-jie.md)
-* [commitlint 校验工具安装及使用](javascript/commitlint-xiao-yan-gong-ju-an-zhuang-ji-shi-yong.md)
 
 ## React
 
@@ -56,6 +55,8 @@
 ## other
 
 * [GitHub Webhooks杂记](other/github-webhooks-za-ji.md)
+* [commitlint 校验工具安装及使用](other/commitlint-xiao-yan-gong-ju-an-zhuang-ji-shi-yong.md)
+* [git merge与git rebase](other/git-merge-yu-git-rebase.md)
 
 ## GraphQL
 
