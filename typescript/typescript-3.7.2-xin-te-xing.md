@@ -2,7 +2,7 @@
 
 ## 新特性
 
-### 可选链 <a id="optional-chaining"></a>
+### 可选链\(Optional Chaining\) <a id="optional-chaining"></a>
 
 ```typescript
 let x = foo?.bar.baz();
