@@ -62,3 +62,7 @@
 
 * [graphql介绍&第一个GraphQL Query](graphql/graphql-jie-shao-di-yi-ge-graphql-query.md)
 
+## TypeScript
+
+* [Typescript 3.7.2新特性](typescript/typescript-3.7.2-xin-te-xing.md)
+
