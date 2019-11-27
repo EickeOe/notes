@@ -18,11 +18,11 @@ let x = (foo === null || foo === undefined) ?
 
 {% hint style="warning" %}
 注意：当`baz`为`undefined`时，仍然会报错，这时需要再次判断`baz`是否为空：
+{% endhint %}
 
 ```typescript
-let x = foo?.bar.baz?.call(null);
+let x = foo?.bar.baz();
 ```
-{% endhint %}
 
 
 
