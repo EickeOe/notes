@@ -21,7 +21,8 @@ let x = (foo === null || foo === undefined) ?
 {% endhint %}
 
 ```typescript
-let x = foo?.bar.baz();
+let x = foo?.bar?.baz?.call(null)
+// 这里我使用了call来调用方法
 ```
 
 
