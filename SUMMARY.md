@@ -66,3 +66,7 @@
 
 * [Typescript 3.7.2新特性](typescript/typescript-3.7.2-xin-te-xing.md)
 
+## TOOLS
+
+* [原生API-FileReader扩展-toPromise](tools/yuan-sheng-apifilereader-kuo-zhan-topromise.md)
+
