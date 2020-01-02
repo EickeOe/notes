@@ -24,7 +24,9 @@
 
 duang~我们的项目就创建好了，新建项目的目录结构应该像下图这个样子：
 
-![&#x76EE;&#x5F55;&#x7ED3;&#x6784;](../.gitbook/assets/qq-tu-pian-20190624182321.png)
+
+
+![&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x76EE;&#x5F55;](https://upload-images.jianshu.io/upload_images/15258497-24c0941bc2247c06.png)
 
 我们先创建两个子项目，在`src`目录下新建文件夹`sub-pro`和`sub-pro1`，然后在子项目下分别新建`App.vue`和`main.ts`:
 
@@ -104,7 +106,9 @@ yarn run serve
 
 熟悉的vue初始化界面：
 
-![](../.gitbook/assets/qq-tu-pian-20190624184017.png)
+
+
+![vue&#x521D;&#x59CB;&#x754C;&#x9762;](https://upload-images.jianshu.io/upload_images/15258497-62c66af1debd518d.png)
 
 我们的子项目在哪里呢？
 
@@ -126,7 +130,9 @@ yarn run serve
 
 保存，刷新浏览器就可以看到home和about的超链接被我们改成了sub-pro和sub-pro1的超链接啦
 
-![](../.gitbook/assets/qq-tu-pian-20190624184414.png)
+
+
+![](https://upload-images.jianshu.io/upload_images/15258497-e8af3aa2e08b9d06.png)
 
 点击超链接，就可以访问我们的sub-pro和sub-pro1子项目了。
 
