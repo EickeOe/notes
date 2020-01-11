@@ -57,6 +57,7 @@
 * [GitHub Webhooks杂记](other/github-webhooks-za-ji.md)
 * [commitlint 校验工具安装及使用](other/commitlint-xiao-yan-gong-ju-an-zhuang-ji-shi-yong.md)
 * [git merge与git rebase](other/git-merge-yu-git-rebase.md)
+* [在WSL中，git status显示所有文件已修改的问题](other/zai-wsl-zhong-git-status-xian-shi-suo-you-wen-jian-yi-xiu-gai-de-wen-ti.md)
 
 ## GraphQL
 
