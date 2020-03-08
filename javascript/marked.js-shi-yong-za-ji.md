@@ -437,8 +437,7 @@ marked.Lexer.prototype.token = function (src, top) {
         // Determine whether the next list item belongs here.
         // Backpedal if it does not belong in this list.
         if (i !== l - 1) {
-          const bullet = /(?:[*+-]|\d{1,9}\.)/
-          b = bullet.exec(cap[i + 1])[0];
+          b = this.rules.bullet.exec(cap[i + 1])[0];
           if (bull.length > 1 ? b.length === 1
             : (b.length > 1 || (this.options.smartLists && b !== bull))) {
             src = cap.slice(i + 1).join('\n') + src;
