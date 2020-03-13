@@ -58,6 +58,7 @@
 * [commitlint 校验工具安装及使用](other/commitlint-xiao-yan-gong-ju-an-zhuang-ji-shi-yong.md)
 * [git merge与git rebase](other/git-merge-yu-git-rebase.md)
 * [在WSL中，git status显示所有文件已修改的问题](other/zai-wsl-zhong-git-status-xian-shi-suo-you-wen-jian-yi-xiu-gai-de-wen-ti.md)
+* [记JenKins CI部署前端项目时遇到的问题](other/ji-jenkins-ci-bu-shu-qian-duan-xiang-mu-shi-yu-dao-de-wen-ti.md)
 
 ## GraphQL
 
