@@ -25,7 +25,7 @@ browserlist可以用在下面工具中：
 
 只要将下面的json内容添加到package.json中，以上所有工具都会自动找到（适配）目标浏览器：
 
-```text
+```
   "browserslist": [
     "last 1 version",
     "> 1%",
@@ -36,7 +36,7 @@ browserlist可以用在下面工具中：
 
 或者在项目根目录的`.browserslistrc`配置文件中添加下面的配置：
 
-```text
+```
 # Browsers that we support
 ​
 last 1 version
@@ -45,9 +45,9 @@ maintained node versions
 not dead
 ```
 
-开发者通过设置浏览器版本查询范围，使开发者不用频繁手动更新浏览器版本。browserslist 使用 [Can I Use](https://caniuse.com/) 网站的数据来查询浏览器版本范围。
+开发者通过设置浏览器版本查询范围，使开发者不用频繁手动更新浏览器版本。browserslist 使用 [Can I Use](https://caniuse.com) 网站的数据来查询浏览器版本范围。
 
-browserslist 提供在线的查询条件练习网站，下面会用到，点击 [这里](https://browserl.ist/) 前往。
+browserslist 提供在线的查询条件练习网站，下面会用到，点击 [这里](https://browserl.ist) 前往。
 
 可以点[这里](https://github.com/browserslist/browserslist-example)来学习每种工具如何使用browserlist。
 
@@ -58,7 +58,7 @@ browserlist会使用下列配置方式来进行查询浏览器和nodejs版本：
 * 在package.json中加入`browserslist` 配置项。
 * 使用项目根目录或父目录下的`.browserslistrc`配置文件。
 * 使用项目根目录或父目录下的`.browserslist`配置文件。
-*  `BROWERSLIST` 环境变量。
+* &#x20;`BROWERSLIST` 环境变量。
 * 如果没有以上4种配置方式，browserlist会使用默认的配置：`> 0.5%, last 2 versions, Firefox ESR, not dead`。
 
 #### 查询条件
@@ -129,4 +129,3 @@ browserlist会使用下列配置方式来进行查询浏览器和nodejs版本：
 * `Samsung` for Samsung Internet.
 * `UCAndroid` or `and_uc` for UC Browser for Android.
 * `kaios` for KaiOS Browser.
-

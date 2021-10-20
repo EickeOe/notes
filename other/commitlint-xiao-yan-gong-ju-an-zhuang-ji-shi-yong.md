@@ -7,78 +7,74 @@
 
 步骤：
 
-1. 初始化nodejs项目：
+1.  初始化nodejs项目：
 
-   ```bash
-   npm init -y
-   ```
+    ```bash
+    npm init -y
+    ```
 
-   这条命令会在项目根目录生成package.json配置文件
+    这条命令会在项目根目录生成package.json配置文件
+2.  然后安装husky，commitlint相关依赖：
 
-2. 然后安装husky，commitlint相关依赖：
+    ```bash
+    npm install --save-dev @commitlint/config-conventional @commitlint/cli husky
+    ```
+3.  在项目根目录新建commitlint.config.js配置文件，并加入下面的代码：
 
-   ```bash
-   npm install --save-dev @commitlint/config-conventional @commitlint/cli husky
-   ```
+    ```javascript
+    const types = [
+      'task',
+      'story',
+      'bug'
+    ];
+    ​
+    typeEnum={
+      rules:{
+        'type-enum': [2, 'always', types]
+      },
+      value:() => types
+    }
+    ​
+    module.exports = {
+      parserPreset: './parser-preset',
+      extends: [
+        "@commitlint/config-conventional"
+      ],
+      rules: {
+        'body-leading-blank': [1, 'always'],
+        'footer-leading-blank': [1, 'always'],
+        'header-max-length': [2, 'always', 72],
+        'scope-case': [2, 'always', 'kebab-case'],
+        'subject-case': [2,'always','kebab-case'],
+        'subject-empty': [2, 'never'],
+        'subject-full-stop': [2, 'never', '.'],
+        'type-case': [2, 'always', 'lower-case'],
+        'type-empty': [2, 'never'],
+        'type-enum': typeEnum.rules['type-enum']
+      }
+    };
+    ```
+4.  在项目根目录新建parser-preset.js配置文件，并加入下面的代码：
 
-3. 在项目根目录新建commitlint.config.js配置文件，并加入下面的代码：
+    ```javascript
+    module.exports = {
+      parserOpts: {
+          headerPattern: /^(task|story|bug)(\(\S+\))?: \d+-(?!-)[\S]+$/,
+          headerCorrespondence: ['type', 'scope']
+      }
+    };
+    ```
+5.  在package.json中加入下面的代码：
 
-   ```javascript
-   const types = [
-     'task',
-     'story',
-     'bug'
-   ];
-   ​
-   typeEnum={
-     rules:{
-       'type-enum': [2, 'always', types]
-     },
-     value:() => types
-   }
-   ​
-   module.exports = {
-     parserPreset: './parser-preset',
-     extends: [
-       "@commitlint/config-conventional"
-     ],
-     rules: {
-       'body-leading-blank': [1, 'always'],
-       'footer-leading-blank': [1, 'always'],
-       'header-max-length': [2, 'always', 72],
-       'scope-case': [2, 'always', 'kebab-case'],
-       'subject-case': [2,'always','kebab-case'],
-       'subject-empty': [2, 'never'],
-       'subject-full-stop': [2, 'never', '.'],
-       'type-case': [2, 'always', 'lower-case'],
-       'type-empty': [2, 'never'],
-       'type-enum': typeEnum.rules['type-enum']
-     }
-   };
-   ```
-
-4. 在项目根目录新建parser-preset.js配置文件，并加入下面的代码：
-
-   ```javascript
-   module.exports = {
-     parserOpts: {
-         headerPattern: /^(task|story|bug)(\(\S+\))?: \d+-(?!-)[\S]+$/,
-         headerCorrespondence: ['type', 'scope']
-     }
-   };
-   ```
-
-5. 在package.json中加入下面的代码：
-
-   ```javascript
-   {
-     "husky": {
-       "hooks": {
-         "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-       }
-     }
-   }
-   ```
+    ```javascript
+    {
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+      }
+    }
+    ```
 
 ### 怎么配置commitlint？
 
@@ -135,4 +131,3 @@ module.exports = {
   }
 }
 ```
-

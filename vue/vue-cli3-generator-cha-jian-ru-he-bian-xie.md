@@ -18,7 +18,7 @@ Generator插件用于向`package.json`文件注入额外的依赖或字段，并
 
 一个Generator插件的目录解构是这样的：
 
-```text
+```
 .
 ├── README.md
 ├── generator  # generator 插件的文件夹
@@ -29,7 +29,7 @@ Generator插件用于向`package.json`文件注入额外的依赖或字段，并
 
 Generator插件示例代码：
 
-```text
+```
 // index.js
 module.exports = (api, options, rootOptions, invoking) => {
     const pkg = {
@@ -64,7 +64,7 @@ Generator的渲染模板：
 
 还可以使用yaml前置信息继承并替换已有的模板文件的一部分：
 
-```text
+```
 ---
 extend: '@vue/cli-service/generator/template/src/App.vue'   // 继承文件
 replace: !!js/regexp /<script>[^]*?<\/script>/              // 替换规则
@@ -79,7 +79,7 @@ export default {
 
 也可以多出替换，你需要将要替换的字符串用`<%# REPLACE %>` 和 `<%# END_REPLACE %>` 块包裹起来：
 
-```text
+```
 ---
 extend: '@vue/cli-service/generator/template/src/App.vue'
 replace:
@@ -101,9 +101,9 @@ export default {
 ```
 
 {% hint style="warning" %}
-注意：如果你想渲染一个以点开头的模板文件\(例如：`.env`\)，需要把文件名开头的点改为下划线\(因为以点开头的文件会在插件发布到npm的时候忽略\)：
+注意：如果你想渲染一个以点开头的模板文件(例如：`.env`)，需要把文件名开头的点改为下划线(因为以点开头的文件会在插件发布到npm的时候忽略)：
 
-```text
+```
  _env
 
  # 调用api.render('./_env')后会在项目目录中渲染为：
@@ -113,7 +113,7 @@ export default {
 
 当你想渲染以下划线开头的文件时，需要把文件名开头再添加一个下划线：
 
-```text
+```
  __env.less
 
  # 调用api.render('./__env.less')后会在项目目录中渲染为：
@@ -132,15 +132,14 @@ export default {
 
 使用命令：
 
-```text
+```
 vue add <name>
 ```
 
 安装命令：
 
-```text
+```
 vue invoke <name>
 ```
 
 至此完成，vue cli Generator插件已经发布成功并且可以使用了
-

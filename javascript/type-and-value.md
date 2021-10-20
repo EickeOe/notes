@@ -23,4 +23,3 @@
   * `RegExp.prototype.toString()="/(?:)/"`
 * JavaScript为原始值提供对象包装类，被称为natives（String，Number，Boolean等）。这些对象包装器能够让原始值访问每个对象的子类型对应的行为（`String#trim()`和`Array#concat(...)`）。
 * 如果你有一个像`"abc"`这样的简单原始类型值，当你访问它的`length`属性或一些`String.portotype`的方法，JS会自动**装箱**这个值（把它封装在对应的封装类中），这样你才能访问这些属性和方法。
-

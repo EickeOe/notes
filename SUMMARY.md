@@ -46,6 +46,7 @@
 ## golang
 
 * [dll调用踩坑](golang/dll-tiao-yong-cai-keng.md)
+* [记golang调用ffmpeg生成hls切片并DRM加密](golang/ji-golang-tiao-yong-ffmpeg-sheng-cheng-hls-qie-pian-bing-drm-jia-mi.md)
 
 ## THREE
 
@@ -71,4 +72,3 @@
 ## TOOLS
 
 * [原生API-FileReader扩展-toPromise](tools/yuan-sheng-apifilereader-kuo-zhan-topromise.md)
-

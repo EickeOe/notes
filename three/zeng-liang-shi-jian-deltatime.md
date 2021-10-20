@@ -49,5 +49,3 @@ const APP.core = {
 }
 ```
 
-
-

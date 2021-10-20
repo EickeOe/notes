@@ -28,5 +28,3 @@ FileReader.prototype.toPromise = function<T>(): Promise<T> {
 }
 ```
 
-
-

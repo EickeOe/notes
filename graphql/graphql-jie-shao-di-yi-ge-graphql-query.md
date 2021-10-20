@@ -6,7 +6,7 @@ GraphQL官方解释是一个用于API的查询语言。这样说起来可能不�
 
 例如一个用于请求用户数据的传统的restFulAPI：
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](<../.gitbook/assets/image (1).png>)
 
 这个API始终会返回id,name,avatar三个属性。
 
@@ -39,7 +39,7 @@ GraphQL官方解释是一个用于API的查询语言。这样说起来可能不�
 
 ## 如何使用GraphQL？
 
-这里我用nestjs作为后端服务器，不熟悉nestjs的小伙伴可以点[这里](https://docs.nestjs.com/)学习一下nestjs。
+这里我用nestjs作为后端服务器，不熟悉nestjs的小伙伴可以点[这里](https://docs.nestjs.com)学习一下nestjs。
 
 1. 创建后端服务
 
@@ -49,13 +49,13 @@ nest new graph-ql
 cd graph-ql
 ```
 
-2. 安装graphQL相关依赖
+2\. 安装graphQL相关依赖
 
 ```bash
 yarn add @nestjs/graphql apollo-server-express graphql-tools graphql
 ```
 
-3. 在ApplicationModule中引用GraphQLModule
+3\. 在ApplicationModule中引用GraphQLModule
 
 ```typescript
 import { Module } from '@nestjs/common';
@@ -69,7 +69,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 export class ApplicationModule {}
 ```
 
-4. 设置Schema的路径，这样，GraphQL就可以检测到我们的graphql文件了
+4\. 设置Schema的路径，这样，GraphQL就可以检测到我们的graphql文件了
 
 ```typescript
 GraphQLModule.forRoot({
@@ -77,7 +77,7 @@ GraphQLModule.forRoot({
 }),
 ```
 
-5. 创建我们的account查询
+5\. 创建我们的account查询
 
 在src下新建名为account的文件夹，及相关代码文件
 
@@ -135,7 +135,7 @@ import { AccountResolvers } from './account.resolvers';
 export class AccountModule { }
 ```
 
-6. 在AppModule中引用AccountModule
+6\. 在AppModule中引用AccountModule
 
 ```typescript
 // app.module.ts
@@ -154,15 +154,15 @@ import { AccountModule } from './account/account.module';
 export class AppModule { }
 ```
 
-7. 启动nestjs服务
+7\. 启动nestjs服务
 
 ```bash
 yarn run start:dev
 ```
 
-8. 访问[http://localhost:3000/graphql](http://localhost:3000/graphql)，打开Playground查询界面
+8\. 访问[http://localhost:3000/graphql](http://localhost:3000/graphql)，打开Playground查询界面
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](<../.gitbook/assets/image (2).png>)
 
 这样，我们的第一个graphQL就已经写好啦。
 
@@ -178,7 +178,6 @@ yarn run start:dev
 
 点击查询按钮,就会出现我们需要的数据啦：
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](<../.gitbook/assets/image (3).png>)
 
 到这里，graphQL的一个简单的query就完成啦，示例中没有关联数据库，可以自行在resolver中查询数据库。
-

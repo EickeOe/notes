@@ -12,7 +12,7 @@ Nodejs 下载地址：[https://npm.taobao.org/mirrors/node/v10.15.3/node-v10.15.
 
 Python2.7 下载地址：[https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64.msi](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64.msi)
 
-JDK：[https://download.oracle.com/otn-pub/java/jdk/12.0.1+12/69cfe15208a647278a19ef0990eea691/jdk-12.0.1\_windows-x64\_bin.exe](https://download.oracle.com/otn-pub/java/jdk/12.0.1+12/69cfe15208a647278a19ef0990eea691/jdk-12.0.1_windows-x64_bin.exe)
+JDK：[https://download.oracle.com/otn-pub/java/jdk/12.0.1+12/69cfe15208a647278a19ef0990eea691/jdk-12.0.1\_windows-x64\_bin.exe](https://download.oracle.com/otn-pub/java/jdk/12.0.1+12/69cfe15208a647278a19ef0990eea691/jdk-12.0.1\_windows-x64\_bin.exe)
 
 IDEA 下载地址：[https://download.jetbrains.com/idea/ideaIU-2019.1.2.exe](https://download.jetbrains.com/idea/ideaIU-2019.1.2.exe)
 
@@ -36,62 +36,59 @@ yarn config set disturl https://npm.taobao.org/dist --global
 
 #### Android 开发环境搭建
 
-1. 打开安装好的 IDEA，注册码可以到[这里](http://idea.lanyus.com/)获取。
-2. 点击 Configure，点击 Settings，打开 Settings 界面
+1. 打开安装好的 IDEA，注册码可以到[这里](http://idea.lanyus.com)获取。
+2.  点击 Configure，点击 Settings，打开 Settings 界面
 
-   ![](../.gitbook/assets/configure.png)
+    ![](../.gitbook/assets/configure.png)
+3.  搜索框中输入`Android SDK`，选择你的 Android SDK，如果还没有安装 Android SDK，可以选择一个版本进行下载安装。
 
-3. 搜索框中输入`Android SDK`，选择你的 Android SDK，如果还没有安装 Android SDK，可以选择一个版本进行下载安装。
+    ![](../.gitbook/assets/sel-androidsdk.png)
+4.  切换到`SDK Tools`,选择`Android SDK Tools`，然后安装，最后点击右下角的`Apply`按钮
 
-   ![](../.gitbook/assets/sel-androidsdk.png)
-
-4. 切换到`SDK Tools`,选择`Android SDK Tools`，然后安装，最后点击右下角的`Apply`按钮
-
-   ![](../.gitbook/assets/sel-sdk2.png)
-
+    ![](../.gitbook/assets/sel-sdk2.png)
 5. 现在，我们需要配置`JAVA_HOME`和`ANDROID_HOME` 环境变量
 
-打开`控制面板` -&gt; `系统和安全` -&gt; `系统` -&gt; `高级系统设置` -&gt; `高级` -&gt; `环境变量` -&gt; `新建`，创建一个名为`JAVA_HOME`的环境变量（系统或用户变量均可），指向你的 JDK 所在的目录（具体的路径可能和下图不一致，请自行确认）： ![](file://D:/Documents/front/example/react/static/image/react-native/path.png?lastModify=1557888140)
+打开`控制面板` -> `系统和安全` -> `系统` -> `高级系统设置` -> `高级` -> `环境变量` -> `新建`，创建一个名为`JAVA_HOME`的环境变量（系统或用户变量均可），指向你的 JDK 所在的目录（具体的路径可能和下图不一致，请自行确认）： ![](file:///D:/Documents/front/example/react/static/image/react-native/path.png?lastModify=1557888140)
 
 ![](../.gitbook/assets/path.png)
 
- 打开`控制面板` -&gt; `系统和安全` -&gt; `系统` -&gt; `高级系统设置` -&gt; `高级` -&gt; `环境变量` -&gt; `新建`，创建一个名为`ANDROID_HOME`的环境变量（系统或用户变量均可），指向你的 Android SDK 所在的目录（具体的路径可能和下图不一致，请自行确认）：
+&#x20;打开`控制面板` -> `系统和安全` -> `系统` -> `高级系统设置` -> `高级` -> `环境变量` -> `新建`，创建一个名为`ANDROID_HOME`的环境变量（系统或用户变量均可），指向你的 Android SDK 所在的目录（具体的路径可能和下图不一致，请自行确认）：
 
-![](https://reactnative.cn/docs/assets/GettingStartedAndroidEnvironmentVariableANDROID_HOME.png)
+![](https://reactnative.cn/docs/assets/GettingStartedAndroidEnvironmentVariableANDROID\_HOME.png)
 
- SDK 默认是安装在下面的目录：
+&#x20;SDK 默认是安装在下面的目录：
 
-```text
+```
   c:\Users\你的用户名\AppData\Local\Android\Sdk
 ```
 
- 你可以在 IDEA 的"Preferences"菜单中查看 SDK 的真实路径，具体是**Appearance & Behavior** → **System Settings** → **Android SDK**。 你需要关闭现有的命令符提示窗口然后重新打开，这样新的环境变量才能生效。
+&#x20;你可以在 IDEA 的"Preferences"菜单中查看 SDK 的真实路径，具体是**Appearance & Behavior** → **System Settings** → **Android SDK**。 你需要关闭现有的命令符提示窗口然后重新打开，这样新的环境变量才能生效。
 
 1. 接下来把 jdk 的 bin 目录和 platform-tools 目录添加到环境变量 Path 中
 
-打开`控制面板` -&gt; `系统和安全` -&gt; `系统` -&gt; `高级系统设置` -&gt; `高级` -&gt; `环境变量`，选中**Path**变量，然后点击**编辑**。点击**新建**然后把 jdk 的 bin 目录和 platform-tools 目录路径添加进去。
+打开`控制面板` -> `系统和安全` -> `系统` -> `高级系统设置` -> `高级` -> `环境变量`，选中**Path**变量，然后点击**编辑**。点击**新建**然后把 jdk 的 bin 目录和 platform-tools 目录路径添加进去。
 
 jdk 的 bin 目录的默认路径为：
 
-```text
+```
 C:\Program Files\Java\jdk-12\bin
 ```
 
 platform-tools 目录的默认路径为：
 
-```text
+```
 c:\Users\你的用户名\AppData\Local\Android\Sdk\platform-tools
 ```
 
 #### IOS 开发环境搭建
 
-由于我是使用 windows 的，所以本部分文档请参考[https://reactnative.cn/docs/getting-started.html\#xcode](https://reactnative.cn/docs/getting-started.html#xcode)
+由于我是使用 windows 的，所以本部分文档请参考[https://reactnative.cn/docs/getting-started.html#xcode](https://reactnative.cn/docs/getting-started.html#xcode)
 
 ### 创建项目
 
 使用 React Native 命令行工具来创建一个基于 typescript 开发环境的名为"myapp"的新项目：
 
-```text
+```
 react-native init myapp --template typescript
 ```
 
@@ -105,7 +102,7 @@ react-native init myapp --template typescript
 
 确保你先运行了模拟器或者连接了真机，然后在你的项目目录中运行`react-native run-android`：
 
-```text
+```
 cd myapp
 react-native run-android
 ```
@@ -193,4 +190,3 @@ export default class App extends Component<Props> {
 ```
 
 至此，React Native 应用已经集成了 Redux，React Router。
-

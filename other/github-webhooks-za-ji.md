@@ -4,7 +4,7 @@
 
 ## GitHub  Webhooks
 
-Webhooks是GitHub提供的一个API。Webhooks可以在GitHub仓库\(repositories\)发生事件\(比如提交代码,创建分支，发布版本\)时，通知到其他服务器。官方介绍点[这里](https://help.github.com/en/articles/about-webhooks)
+Webhooks是GitHub提供的一个API。Webhooks可以在GitHub仓库(repositories)发生事件(比如提交代码,创建分支，发布版本)时，通知到其他服务器。官方介绍点[这里](https://help.github.com/en/articles/about-webhooks)
 
 ### 用途
 
@@ -107,6 +107,4 @@ polka()
 ```
 
 这样，加密签名验证就完成啦。
-
-
 

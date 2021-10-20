@@ -2,7 +2,7 @@
 
 ## 新特性
 
-### 可选链\(Optional Chaining\) <a id="optional-chaining"></a>
+### 可选链(Optional Chaining) <a href="optional-chaining" id="optional-chaining"></a>
 
 ```typescript
 let x = foo?.bar.baz();
@@ -24,6 +24,4 @@ let x = (foo === null || foo === undefined) ?
 let x = foo?.bar?.baz?.call(null)
 // 这里我使用了call来调用方法
 ```
-
-
 

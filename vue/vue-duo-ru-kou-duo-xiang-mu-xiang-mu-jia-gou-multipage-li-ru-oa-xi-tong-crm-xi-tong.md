@@ -22,11 +22,11 @@
 
 首先，我们先创建一个vue项目，这个请参考cli3官网的[教程](https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create)。
 
-duang~我们的项目就创建好了，新建项目的目录结构应该像下图这个样子：
+duang\~我们的项目就创建好了，新建项目的目录结构应该像下图这个样子：
 
 
 
-![&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x76EE;&#x5F55;](https://upload-images.jianshu.io/upload_images/15258497-24c0941bc2247c06.png)
+![项目文件目录](https://upload-images.jianshu.io/upload\_images/15258497-24c0941bc2247c06.png)
 
 我们先创建两个子项目，在`src`目录下新建文件夹`sub-pro`和`sub-pro1`，然后在子项目下分别新建`App.vue`和`main.ts`:
 
@@ -95,7 +95,7 @@ module.exports = {
 ```
 
 {% hint style="info" %}
-这里我们配置了三个入口，分别是`src/main.ts`、`src/sub-pro/main.ts`、`src/sub-pro1/main.ts` 第一个入口是我们的主入口，当我们项目启动后会进入这个入口，剩下的两个就是我们的子项目的入口。
+这里我们配置了三个入口，分别是`src/main.ts`、`src/sub-pro/main.ts`、`src/sub-pro1/main.ts `第一个入口是我们的主入口，当我们项目启动后会进入这个入口，剩下的两个就是我们的子项目的入口。
 {% endhint %}
 
 这样，我们就配置完啦，可以启动了。命令行运行：
@@ -108,7 +108,7 @@ yarn run serve
 
 
 
-![vue&#x521D;&#x59CB;&#x754C;&#x9762;](https://upload-images.jianshu.io/upload_images/15258497-62c66af1debd518d.png)
+![vue初始界面](https://upload-images.jianshu.io/upload\_images/15258497-62c66af1debd518d.png)
 
 我们的子项目在哪里呢？
 
@@ -132,7 +132,7 @@ yarn run serve
 
 
 
-![](https://upload-images.jianshu.io/upload_images/15258497-e8af3aa2e08b9d06.png)
+![](https://upload-images.jianshu.io/upload\_images/15258497-e8af3aa2e08b9d06.png)
 
 点击超链接，就可以访问我们的sub-pro和sub-pro1子项目了。
 
@@ -248,5 +248,4 @@ module.exports = {
 
 这里我的思路是通过规范git commit message，利用commit message来确定打包部署某一个或某几个子项目，具体还在思索中，所以步骤就没有啦。
 
-（未完待续。。。\)
-
+（未完待续。。。)

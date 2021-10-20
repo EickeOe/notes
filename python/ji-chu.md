@@ -186,7 +186,7 @@ tu[:3]
 
 #### 生成器
 
-概念同js中的生成器\(Generator\)，同java中的迭代器\(Iterator\)
+概念同js中的生成器(Generator)，同java中的迭代器(Iterator)
 
 ```python
 # 创建一个生成器
@@ -263,7 +263,7 @@ import sys
 
 最后，注意到这两行代码：
 
-```text
+```
 if __name__=='__main__':
     test()
 ```
@@ -282,11 +282,11 @@ if __name__=='__main__':
 
 在python中，安装第三方模块，是通过setuotools这个工具完成的。官方推荐`pip`
 
-```text
+```
 pip install xxx
 ```
 
-#### 使用_\_future\_\_
+#### 使用_\_future\\_\_
 
 python版本迭代会有不兼容的api，所以python提供了`__future__`模块，把下一个新版本的特性导入到当前版本
 
@@ -330,7 +330,7 @@ class Cat(Animal):
 
 #### 获取对象信息
 
-**type\(\)**
+**type()**
 
 ```python
 # type()可以理解为js中的typeof
@@ -346,7 +346,7 @@ type(a)
 # <class '__main__.Animal'>
 ```
 
-**isinstance\(\)**
+**isinstance()**
 
 `isinstance`可以通过查找继承关系来确定类型
 
@@ -361,7 +361,7 @@ isinstance(d, Animal)
 # True
 ```
 
-**dir\(\)**
+**dir()**
 
 `dir`可以用来获取一个对象所有的属性和方法，它返回一个包含字符串的list
 
@@ -392,7 +392,7 @@ len(obj)
 # 100
 ```
 
-**get&set&hasattr**
+**get\&set\&hasattr**
 
 `getattr`&`setattr`是用来获取和设置对象的属性的api。`hasattr`等同于`hasOwnProperty`。
 
@@ -435,7 +435,7 @@ def set_y(self, y):
 MyObject.set_y = MethodType(set_y, None, MyObject)
 ```
 
-使用\__slots\_\_来限制`class`的属性，比如只允许对`MyObject`实例添加`y`和`z`属性。为了达到限制的目的，python允许再定义`class`的时候，定义一个特殊的`__slots__`变量，来限制改`class`能添加的属性。
+使用\__slots\\_\_来限制`class`的属性，比如只允许对`MyObject`实例添加`y`和`z`属性。为了达到限制的目的，python允许再定义`class`的时候，定义一个特殊的`__slots__`变量，来限制改`class`能添加的属性。
 
 ```python
 class MyObject(object):
@@ -446,7 +446,7 @@ class MyObject(object):
 
 #### 使用@property
 
-@property用途等同于js对象中的getter&setter
+@property用途等同于js对象中的getter\&setter
 
 ```python
 class MyObject(object):
@@ -517,7 +517,7 @@ print MyObject(2)
 
 **\_iter\_**
 
-class的迭代器方法，该方法返回一个迭代对象\(iterator\)，如果重写此方法，则表示此class可以被迭代。
+class的迭代器方法，该方法返回一个迭代对象(iterator)，如果重写此方法，则表示此class可以被迭代。
 
 ```python
 class Fib(object):
@@ -618,7 +618,7 @@ obj()
 
 #### 使用元类
 
-**type\(\)**
+**type()**
 
 使用`type()`可以动态创建class，无需使用`class`关键字创建class
 
@@ -697,7 +697,7 @@ def main():
 
 如果断言失败，`assert`语句本身就会抛出`AssertionError`：
 
-```text
+```
 $ python err.py
 Traceback (most recent call last):
   ...
@@ -706,7 +706,7 @@ AssertionError: n is zero!
 
 启动python解释器时可以使用`-O`参数来关闭`assert`
 
-```text
+```
 $ python -O err.py
 Traceback (most recent call last):
   ...
@@ -804,7 +804,7 @@ def run_proc(name):
 # Process end.
 ```
 
-创建子进程时,只需要传入一个执行函数和函数的参数,创建一个`Process实例,用`start\(\)\`方法启动.
+创建子进程时,只需要传入一个执行函数和函数的参数,创建一个`Process实例,用`start()\`方法启动.
 
 `join()`方法可以等待子进程结束后再继续往下运行,通常用于进程间的同步.
 
@@ -834,7 +834,7 @@ if __name__ == '__main__':
   print 'All subprocess done.'
 ```
 
-```text
+```
 Parent process 669.
 Waiting for all subprocesses done...
 Run task 0 (671)...
@@ -1007,4 +1007,3 @@ for i in range(10):
 # 处理结束:
 print('worker exit.')
 ```
-

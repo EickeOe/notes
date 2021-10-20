@@ -2,7 +2,7 @@
 
 在Discord的FE社区中遇到的问题：
 
- im creating a drag/drop component base on jquery ui. as you can see in my code I have to wrap props.children with `<div>` in order to gain ref on the root element. how do I change my code if I want to remove &lt;div&gt; and use the children root element instead as my droppable?, also what is the difference between ref and itemRef?
+&#x20;im creating a drag/drop component base on jquery ui. as you can see in my code I have to wrap props.children with `<div>` in order to gain ref on the root element. how do I change my code if I want to remove \<div> and use the children root element instead as my droppable?, also what is the difference between ref and itemRef?
 
 ```jsx
 import * as React from 'react';
@@ -56,6 +56,4 @@ class D extends React.Component {
 
 1. 使用`React.createRef`创建`ref`.
 2. 使用`React.cloneElement`来复制子组件，然后传递`ref`给子组件
-
-
 

@@ -6,7 +6,7 @@
 
 官方解释：redux 是 js 应用的可预测状态的容器。 可以理解为全局数据状态管理工具（状态管理机），用来做组件通信等。
 
-\#\# 为什么使用 Redux？
+\## 为什么使用 Redux？
 
 下面的图是不使用 Redux 和使用 Redux 时 父子组件之间的通信方式 ![](https://oscimg.oschina.net/oscnet/90a9e69d3675d26d70dd270708d442188b3.jpg)
 
@@ -83,7 +83,7 @@ import { createStore } from "redux";
 const store = createStore(rootReducer);
 ```
 
-#### store.dispatch\(\)
+#### store.dispatch()
 
 `store.dispatch()`是组件发出`action`的唯一方法。
 
@@ -106,18 +106,18 @@ yarn add redux react-redux @types/react-redux @types/redux
 
 ### react-redux 的 API
 
-#### connect\(\)
+#### connect()
 
-connect\(\)用来将 react 组件连接到 redux 的`store`，就是使 react 组件可以接收到`store`中的数据。
+connect()用来将 react 组件连接到 redux 的`store`，就是使 react 组件可以接收到`store`中的数据。
 
-**connect\(\)的参数**
+**connect()的参数**
 
 1. `mapStateToProps?: Function`
 2. `mapDispatchToProps?: Function | Object`
 3. `mergeProps?: Function`
 4. `options?: Object`
 
-**mapStateToProps?: \(state, ownProps?\) =&gt; Object**
+**mapStateToProps?: (state, ownProps?) => Object**
 
 这个方法是用来指定 react 组件将使用哪些`store`中的数据，也就是说，当`store`中的`state`更新后，这个方法会接收`state`（方法的第一个参数），将`state`中变更的值通过**返回值**传递给 react 组件的`props`。例如计数器的`mapStateToProps`：
 
@@ -129,7 +129,7 @@ const mapStateToProps = (state: any) => {
 };
 ```
 
-**mapDispatchToProps?: Object \| \(dispatch, ownProps?\) =&gt; Object**
+**mapDispatchToProps?: Object | (dispatch, ownProps?) => Object**
 
 这个方法的第一个参数就是`store.dispatch`,可以定义发送`action`的方法，并且将方法通过**返回值**传递给 react 组件的`props`。例如计数器的`mapDispatchToProps`：
 
@@ -140,7 +140,7 @@ const mapDispatchToProps = (dispatch: any) => ({
 });
 ```
 
-**mergeProps?: \(stateProps, dispatchProps, ownProps\) =&gt; Object**
+**mergeProps?: (stateProps, dispatchProps, ownProps) => Object**
 
 这个方法用来生成 react 组件最终的`props`。一般情况下很少使用。
 
@@ -199,4 +199,3 @@ export default class App extends Component<Props> {
 ```
 
 接下来就可以点击`递增`按钮，来始`store.counter.num`进行递增了，递减也是可以的。
-

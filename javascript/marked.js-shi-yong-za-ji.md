@@ -12,31 +12,31 @@
 
 marked.js的工作机制：
 
-创建Lexer\(词法解析器\)实例：
+创建Lexer(词法解析器)实例：
 
 ```javascript
 const lexer = new marked.Lexer()
 ```
 
-lexer将markdown字符串解析成tokens\(tokens是官方文档的叫法，按照我的理解应该是markdown节点\(node\)\)：
+lexer将markdown字符串解析成tokens(tokens是官方文档的叫法，按照我的理解应该是markdown节点(node))：
 
 ```javascript
 const tokens = lexer.lex(md)
 ```
 
-接下来创建Parser\(解析器\)实例：
+接下来创建Parser(解析器)实例：
 
 ```javascript
 const parser = new marked.Parser()
 ```
 
-调用parser.parse\(\)来解析tokens，生成html字符串：
+调用parser.parse()来解析tokens，生成html字符串：
 
 ```javascript
 const html = parser.parse(tokens)
 ```
 
-到这里，marked.js的工作机制就完了。  
+到这里，marked.js的工作机制就完了。\
 那么，我们需要修改的部分也就很清晰了，我们需要修改lexer的生成tokens函数、parser的解析函数以及渲染函数。
 
 ### 如何修改Lexer生成token的函数？
@@ -759,4 +759,3 @@ renderer.listitem = (body, task, checked) => {
 marked.setOptions({ renderer })
 export default marked
 ```
-
